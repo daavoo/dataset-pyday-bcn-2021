@@ -310,8 +310,13 @@ jobs:
 
 ---
 
-## 5. Run Pipeline from Github
+## 5. Run Pipeline from GitHub
 
+- Edit `params.yaml` from the GitHub Interface.
+
+- Change `until` from `2021/11/24` to `2021/11/26`.
+
+- Select `Create a new branch for this commit and start a pull request`
 
 ---
 
