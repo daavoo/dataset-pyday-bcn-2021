@@ -235,7 +235,7 @@ https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-en
 </details>
 
 <details>
-<summary>Create `on_pr.yml`</summary>
+<summary>Create `.github/workflows/on_pr.yml`</summary>
 
 More info:
 
