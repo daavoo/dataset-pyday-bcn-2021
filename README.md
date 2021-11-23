@@ -28,9 +28,9 @@ You should be able to follow all the steps bellow without leaving the browser.
 
 ## 1. Fork this repo
 
-How: https://docs.github.com/en/get-started/quickstart/fork-a-repo
+- https://github.com/daavoo/dataset-pyday-bcn-2021
 
-- https://github.com/daavoo/dataset-comida-hobby-libro
+How: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 
 ---
 
