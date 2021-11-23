@@ -334,7 +334,7 @@ jobs:
 
 
 <details>
-<summary>Create `weekly.yml`</summary>
+<summary>Create `.github/workflows/weekly.yml`</summary>
 
 ```yaml
 name: DVC & CML Weekly Workflow
