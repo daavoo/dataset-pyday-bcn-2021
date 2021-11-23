@@ -218,7 +218,7 @@ if __name__ == "__main__":
 
 ---
 
-## Set Up `On Pull Request` Workflow
+## 5. Set Up `On Pull Request` Workflow
 
 
 <details>
