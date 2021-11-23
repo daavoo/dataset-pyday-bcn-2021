@@ -30,7 +30,7 @@ You should be able to follow all the steps bellow without leaving the browser.
 
 - https://github.com/daavoo/dataset-pyday-bcn-2021
 
-How: https://docs.github.com/en/get-started/quickstart/fork-a-repo
+More info: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 
 ---
 
@@ -47,12 +47,12 @@ More info: https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
 <details>
 <summary>Add remote to `.dvc/config`</summary>
 
-How: # https://dvc.org/doc/user-guide/setup-google-drive-remote
-
 ```
 ['remote "myremote"']
     url = gdrive://YOUR_URL
 ```
+
+More info: https://dvc.org/doc/user-guide/setup-google-drive-remote
 
 Other remote type? No problemo: 
 
