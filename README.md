@@ -30,7 +30,7 @@ You should be able to follow all the steps bellow without leaving the browser.
 
 - https://github.com/daavoo/dataset-pyday-bcn-2021
 
-How: https://docs.github.com/en/get-started/quickstart/fork-a-repo
+More info: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 
 ---
 
@@ -47,12 +47,12 @@ More info: https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
 <details>
 <summary>Add remote to `.dvc/config`</summary>
 
-How: # https://dvc.org/doc/user-guide/setup-google-drive-remote
-
 ```
 ['remote "myremote"']
     url = gdrive://YOUR_URL
 ```
+
+More info: https://dvc.org/doc/user-guide/setup-google-drive-remote
 
 Other remote type? No problemo: 
 
@@ -77,7 +77,7 @@ labels:
 
 state: open
 since: 2021/1/1
-until: 2021/11/17
+until: 2021/11/23
 
 data_folder: data
 ```
@@ -218,7 +218,7 @@ if __name__ == "__main__":
 
 ---
 
-## Set Up `On Pull Request` Workflow
+## 5. Set Up `On Pull Request` Workflow
 
 
 <details>
@@ -235,7 +235,7 @@ https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-en
 </details>
 
 <details>
-<summary>Create `on_pr.yml`</summary>
+<summary>Create `.github/workflows/on_pr.yml`</summary>
 
 More info:
 
@@ -310,8 +310,13 @@ jobs:
 
 ---
 
-## 5. Run Pipeline from Github
+## 5. Run Pipeline from GitHub
 
+- Edit `params.yaml` from the GitHub Interface.
+
+- Change `until` from `2021/11/24` to `2021/11/26`.
+
+- Select `Create a new branch for this commit and start a pull request`
 
 ---
 
@@ -329,7 +334,7 @@ jobs:
 
 
 <details>
-<summary>Create `weekly.yml`</summary>
+<summary>Create `.github/workflows/weekly.yml`</summary>
 
 ```yaml
 name: DVC & CML Weekly Workflow
@@ -388,3 +393,5 @@ jobs:
 </details>
 
 ## 8. Operation Vacation: Part 1
+
+![imagen](https://user-images.githubusercontent.com/12677733/143140752-e445b36a-5fe1-4ccb-88bb-a7fa7a88f18c.png)
