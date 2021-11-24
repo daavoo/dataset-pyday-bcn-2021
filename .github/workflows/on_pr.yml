@@ -21,13 +21,12 @@ jobs:
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
           pip install -r requirements.txt
-          dvc pull
 
       - name: Run DVC pipeline
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          dvc exp run
+          dvc repro --pull
 
       - name: Push changes
         env:
