@@ -80,6 +80,7 @@ since: 2021/1/1
 until: 2021/11/23
 
 data_folder: data
+metrics_file: data.json
 ```
 
 </details>
