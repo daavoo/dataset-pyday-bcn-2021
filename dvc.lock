@@ -15,23 +15,23 @@ stages:
         repo: daavoo/data-source-pyday-bcn-2021
         since: 2021/1/1
         state: all
-        until: 2021/11/24
+        until: 2021/11/26
     outs:
     - path: data
-      md5: 3d37987e285a3738efaa81e329046b1b.dir
-      size: 14537
-      nfiles: 19
+      md5: b44385ab179fca2f94480b9a22eab226.dir
+      size: 22195
+      nfiles: 30
   data-metrics:
     cmd: python src/compute_metrics.py --input_folder data --output_metrics_file data.json
     deps:
     - path: data
-      md5: 3d37987e285a3738efaa81e329046b1b.dir
-      size: 14537
-      nfiles: 19
+      md5: b44385ab179fca2f94480b9a22eab226.dir
+      size: 22195
+      nfiles: 30
     - path: src/compute_metrics.py
       md5: 9671e9a9acd295ae91e2fbafb2623d6e
       size: 538
     outs:
     - path: data.json
-      md5: 194592459701d011b73b5bd1739c8e86
-      size: 51
+      md5: 84a349b054b0870af5f899744a8fec21
+      size: 54
