@@ -1,0 +1,25 @@
+stages:
+  get-data:
+    cmd: python src/get_data.py
+      --output_folder ${data_folder}
+    deps:
+      - src/get_data.py
+    params:
+      - repo
+      - labels
+      - state
+      - since
+      - until
+    outs:
+      - ${data_folder}
+  
+  data-metrics:
+    cmd: python src/compute_metrics.py
+      --input_folder ${data_folder}
+      --output_metrics_file ${metrics_file}
+    deps:
+      - src/compute_metrics.py
+      - ${data_folder}
+    metrics:
+      - ${metrics_file}:
+          cache: false
