@@ -55,6 +55,14 @@ Navigate to your for fork and press `.` or change the URL from "github.com" to "
 
 </details>
 
+More info:
+
+- https://dvc.org/doc/user-guide/setup-google-drive-remote
+
+Other remote? No problemo:
+
+https://dvc.org/doc/command-reference/remote/add#supported-storage-types
+
 ---
 
 ## 4. Setup DVC Pipeline
@@ -80,6 +88,9 @@ metrics_file: data.json
 
 </details>
 
+More info:
+
+https://dvc.org/doc/command-reference/params
 
 <details>
 <summary>Create `dvc.yaml`</summary>
@@ -113,6 +124,10 @@ stages:
 ```
 
 </details>
+
+More info:
+
+https://dvc.org/doc/user-guide/project-structure/pipelines-files#pipelines-files-dvcyaml
 
 <details>
 <summary>Create `src/get_data.py`</summary>
@@ -279,6 +294,14 @@ jobs:
 ```
 
 </details>
+
+More info:
+
+- `dvc repro`: https://dvc.org/doc/command-reference/repro
+- `dvc push`: https://dvc.org/doc/command-reference/push
+- `dvc exp diff`: https://dvc.org/doc/command-reference/exp/diff
+- `cml pr`: https://cml.dev/doc/ref/pr
+- `cml send-comment`: https://cml.dev/doc/ref/send-comment
 
 ---
 
