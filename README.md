@@ -1,5 +1,7 @@
 # dataset-pyday-bcn-2021
 
+![Making MLOps Uncool Again](https://user-images.githubusercontent.com/12677733/143686908-4552b11c-41ea-4073-89e4-40b6d090202c.png)
+
 <details>
 <summary>0. Repo setup (already run for you)
 </summary>
