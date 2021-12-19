@@ -1,0 +1,37 @@
+schema: '2.0'
+stages:
+  get-data:
+    cmd: python src/get_data.py --output_folder data
+    deps:
+    - path: src/get_data.py
+      md5: fa4ba886863eeac13b30beafe9130914
+      size: 1688
+    params:
+      params.yaml:
+        labels:
+        - Comida
+        - Hobby
+        - Libro
+        repo: daavoo/data-source-pyday-bcn-2021
+        since: 2021/1/1
+        state: open
+        until: 2021/11/28
+    outs:
+    - path: data
+      md5: 404e2c816df3b17dc9ed3b174cca12e6.dir
+      size: 24653
+      nfiles: 34
+  data-metrics:
+    cmd: python src/compute_metrics.py --input_folder data --output_metrics_file data.json
+    deps:
+    - path: data
+      md5: 404e2c816df3b17dc9ed3b174cca12e6.dir
+      size: 24653
+      nfiles: 34
+    - path: src/compute_metrics.py
+      md5: 9671e9a9acd295ae91e2fbafb2623d6e
+      size: 538
+    outs:
+    - path: data.json
+      md5: f7babc36d725e691307014edd72a2c15
+      size: 54
